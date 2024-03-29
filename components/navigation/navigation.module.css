@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.lists li {
+  font-size: 20px;
+  width: 90px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.lists li:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
