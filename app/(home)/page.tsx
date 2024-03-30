@@ -35,7 +35,7 @@ export default async function Home() {
     <div className={styles.container}>
       <ul className={styles.lists}>
         {lists.results.map((list: IList, i) => (
-          <Link key={i} href={`list/${list.list_name_encoded}`}>
+          <Link key={i} prefetch href={`list/${list.list_name_encoded}`}>
             <li>{list.list_name} &rarr;</li>
           </Link>
         ))}
