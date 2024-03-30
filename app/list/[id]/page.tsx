@@ -75,9 +75,9 @@ export default async function List({ params: { id } }) {
             <img src={book.book_image} />
             <span className={styles.title}>{book.title}</span>
             <span className={styles.author}>{book.author}</span>
-            <span className={styles.go_buy}>
-              <Link href={book.amazon_product_url}>Buy Now &rarr;</Link>
-            </span>
+            <Link className={styles.go_buy} href={book.amazon_product_url}>
+              <span>Buy Now &rarr;</span>
+            </Link>
           </li>
         ))}
       </ul>
